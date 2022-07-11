@@ -20,7 +20,7 @@ typedef struct flags
 
 /**
  * struct printHandler - struct to choose the rightfunction depending
- * on the format specifier passed to -printf()
+ * on the format specifier passed to _printf()
  * @c: format specifier
  * @f: pointer to the correct printing function
  */
@@ -43,7 +43,7 @@ int print_binary(va_list l, flags_t *f);
 int print_octal(va_list l, flags_t *f);
 
 /* converter */
-char *cinvert(unsigned long int num, int base, int lowercase);
+char *convert(unsigned long int num, int base, int lowercase);
 
 /* _printf */
 int _printf(const char *format, ...);
